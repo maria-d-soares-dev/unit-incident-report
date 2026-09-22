@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="A fictional UNIT extraterrestrial incident report form."
+    >
+
+    <title>UNIT Extraterrestrial Incident Report</title>
+</head>
+
+<body>
+    <header>
+        <h1>UNIT Extraterrestrial Incident Report</h1>
+
+        <p>
+            Use this secure channel to report extraterrestrial activity,
+            temporal disturbances or technology of unknown origin.
+        </p>
+
+        <p>
+            In the event of immediate danger, leave the affected area
+            and wait for further instructions.
+        </p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Classified Incident Registration</h2>
+
+            #
+                <fieldset>
+                    <legend>Witness Identification</legend>
+
+                    <p>
+                        <label for="full-name">
+                            Full name:
+                        </label>
+
+                        <input
+                            type="text"
+                            id="full-name"
+                            name="fullName"
+                            minlength="3"
+                            maxlength="100"
+                            placeholder="Enter your full name"
+                            required
+                        >
+                    </p>
+
+                    <p>
+                        <label for="email">
+                            Secure email address:
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="agent@example.com"
+                            required
+                        >
+                    </p>
+
+                    <p>
+                        <label for="phone">
+                            Emergency telephone number:
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="+55 83 99999-9999"
+                            required
+                        >
+                    </p>
+
+                    <p>
+                        <label for="birth-date">
+                            Date of birth:
+                        </label>
+
+                        <input
+                            type="date"
+                            id="birth-date"
+                            name="birthDate"
+                            required
+                        >
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Incident Classification</legend>
+
+                    <p>
+                        <label for="incident-date">
+                            Date of the incident:
+                        </label>
+
+                        <input
+                            type="date"
+                            id="incident-date"
+                            name="incidentDate"
+                            required
+                        >
+                    </p>
+
+                    <p>
+                        <label for="incident-type">
+                            Type of incident:
+                        </label>
+
+                        <select
+                            id="incident-type"
+                            name="incidentType"
+                            required
+                        >
+                            <option value="">
+                                Select an incident type
+                            </option>
+
+                            <option value="extraterrestrial">
+                                Extraterrestrial activity
+                            </option>
+
+                            <option value="temporal">
+                                Temporal disturbance
+                            </option>
+
+                            <option value="unknown-technology">
+                                Technology of unknown origin
+                            </option>
+
+                            <option value="unidentified-creature">
+                                Unidentified creature
+                            </option>
+
+                            <option value="missing-person">
+                                Unexplained disappearance
+                            </option>
+
+                            <option value="other">
+                                Other unexplained phenomenon
+                            </option>
+                        </select>
+                    </p>
+
+                    <p>
+                        Threat level:
+                    </p>
+
+                    <p>
+                        <input
+                            type="radio"
+                            id="low-risk"
+                            name="threatLevel"
+                            value="low"
+                            required
+                        >
+
+                        <label for="low-risk">
+                            Low risk
+                        </label>
+                    </p>
+
+                    <p>
+                        <input
+                            type="radio"
+                            id="moderate-risk"
+                            name="threatLevel"
+                            value="moderate"
+                        >
+
+                        <label for="moderate-risk">
+                            Moderate risk
+                        </label>
+                    </p>
+
+                    <p>
+                        <input
+                            type="radio"
+                            id="high-risk"
+                            name="threatLevel"
+                            value="high"
+                        >
+
+                        <label for="high-risk">
+                            High risk
+                        </label>
+                    </p>
+
+                    <p>
+                        <input
+                            type="radio"
+                            id="global-risk"
+                            name="threatLevel"
+                            value="global"
+                        >
+
+                        <label for="global-risk">
+                            Possible global threat
+                        </label>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Possible Doctor Involvement</legend>
+
+                    <p>
+                        Was the individual known as "the Doctor" present
+                        during the incident?
+                    </p>
+
+                    <p>
+                        <input
+                            type="radio"
+                            id="doctor-confirmed"
+                            name="doctorPresence"
+                            value="confirmed"
+                            required
+                        >
+
+                        <label for="doctor-confirmed">
+                            Yes, the Doctor was positively identified
+                        </label>
+                    </p>
+
+                    <p>
+                        <input
+                            type="radio"
+                            id="doctor-possible"
+                            name="doctorPresence"
+                            value="possible"
+                        >
+
+                        <label for="doctor-possible">
+                            Possibly, but the identification could not
+                            be confirmed
+                        </label>
+                    </p>
+
+                    <p>
+                        <input
+                            type="radio"
+                            id="doctor-not-observed"
+                            name="doctorPresence"
+                            value="not-observed"
+                        >
+
+                        <label for="doctor-not-observed">
+                            No, the Doctor was not observed
+                        </label>
+                    </p>
+
+                    <p>
+                        <input
+                            type="radio"
+                            id="doctor-unknown"
+                            name="doctorPresence"
+                            value="unknown"
+                        >
+
+                        <label for="doctor-unknown">
+                            Unknown
+                        </label>
+                    </p>
+
+                    <p>
+                        <label for="previous-doctor-contact">
+                            Have you previously encountered the Doctor?
+                        </label>
+
+                        <select
+                            id="previous-doctor-contact"
+                            name="previousDoctorContact"
+                            required
+                        >
+                            <option value="">
+                                Select an option
+                            </option>
+
+                            <option value="no-previous-contact">
+                                No previous contact
+                            </option>
+
+                            <option value="one-previous-encounter">
+                                One previous encounter
+                            </option>
+
+                            <option value="multiple-encounters">
+                                Multiple previous encounters
+                            </option>
+
+                            <option value="uncertain-memory">
+                                Uncertain or incomplete memory
+                            </option>
+
+                            <option value="classified">
+                                Information classified
+                            </option>
+                        </select>
+                    </p>
+
+                    <p>
+                        Select all relevant observations:
+                    </p>
+
+                    <p>
+                        <input
+                            type="checkbox"
+                            id="tardis-observed"
+                            name="doctorEvidence"
+                            value="tardis-observed"
+                        >
+
+                        <label for="tardis-observed">
+                            A blue police box was observed near the incident
+                        </label>
+                    </p>
+
+                    <p>
+                        <input
+                            type="checkbox"
+                            id="tardis-materialisation"
+                            name="doctorEvidence"
+                            value="tardis-materialisation"
+                        >
+
+                        <label for="tardis-materialisation">
+                            The police box appeared or disappeared without
+                            conventional transportation
+                        </label>
+                    </p>
+
+                    <p>
+                        <input
+                            type="checkbox"
+                            id="unusual-mechanical-sound"
+                            name="doctorEvidence"
+                            value="unusual-mechanical-sound"
+                        >
+
+                        <label for="unusual-mechanical-sound">
+                            An unidentified mechanical sound was heard
+                        </label>
+                    </p>
+
+                    <p>
+                        <input
+                            type="checkbox"
+                            id="handheld-device"
+                            name="doctorEvidence"
+                            value="handheld-device"
+                        >
+
+                        <label for="handheld-device">
+                            The suspected individual carried an unidentified
+                            handheld device
+                        </label>
+                    </p>
+
+                    <p>
+                        <input
+                            type="checkbox"
+                            id="companions-observed"
+                            name="doctorEvidence"
+                            value="companions-observed"
+                        >
+
+                        <label for="companions-observed">
+                            One or more unidentified associates were present
+                        </label>
+                    </p>
+
+                    <p>
+                        <label for="doctor-description">
+                            Describe the suspected individual, associates,
+                            vehicle and any instructions received:
+                        </label>
+                    </p>
+
+                    <p>
+                        <textarea
+                            id="doctor-description"
+                            name="doctorDescription"
+                            rows="6"
+                            cols="50"
+                            maxlength="1000"
+                            placeholder="Include appearance, behaviour, statements, unusual equipment and details about the blue police box..."
+                        ></textarea>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Incident Description</legend>
+
+                    <p>
+                        <label for="location">
+                            Location of the incident:
+                        </label>
+
+                        <input
+                            type="text"
+                            id="location"
+                            name="location"
+                            maxlength="150"
+                            placeholder="City, building or approximate location"
+                            required
+                        >
+                    </p>
+
+                    <p>
+                        <label for="incident-report">
+                            Describe what you witnessed:
+                        </label>
+                    </p>
+
+                    <p>
+                        <textarea
+                            id="incident-report"
+                            name="incidentReport"
+                            rows="8"
+                            cols="50"
+                            minlength="20"
+                            maxlength="1500"
+                            placeholder="Describe the event, including the time, location and any unusual objects or creatures..."
+                            required
+                        ></textarea>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Available Evidence</legend>
+
+                    <p>
+                        Select all available forms of evidence:
+                    </p>
+
+                    <p>
+                        <input
+                            type="checkbox"
+                            id="photographs"
+                            name="evidence"
+                            value="photographs"
+                        >
+
+                        <label for="photographs">
+                            Photographs
+                        </label>
+                    </p>
+
+                    <p>
+                        <input
+                            type="checkbox"
+                            id="video-recording"
+                            name="evidence"
+                            value="video-recording"
+                        >
+
+                        <label for="video-recording">
+                            Video recording
+                        </label>
+                    </p>
+
+                    <p>
+                        <input
+                            type="checkbox"
+                            id="audio-recording"
+                            name="evidence"
+                            value="audio-recording"
+                        >
+
+                        <label for="audio-recording">
+                            Audio recording
+                        </label>
+                    </p>
+
+                    <p>
+                        <input
+                            type="checkbox"
+                            id="physical-object"
+                            name="evidence"
+                            value="physical-object"
+                        >
+
+                        <label for="physical-object">
+                            Unidentified physical object
+                        </label>
+                    </p>
+
+                    <p>
+                        <input
+                            type="checkbox"
+                            id="other-witnesses"
+                            name="evidence"
+                            value="other-witnesses"
+                        >
+
+                        <label for="other-witnesses">
+                            Other witnesses
+                        </label>
+                    </p>
+                </fieldset>
+
+                <p>
+                    <strong>Security notice:</strong>
+                    Submitting false information may interfere with an
+                    active UNIT investigation. Verify all details before
+                    transmission.
+                </p>
+
+                <p>
+                    <button type="submit">
+                        Transmit Classified Report
+                    </button>
+
+                    <button type="reset">
+                        Delete Unsent Report
+                    </button>
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            Classified training document.
+        </p>
+
+        <p>
+            This is an unofficial fan project created for educational
+            purposes.
+        </p>
+    </footer>
+</body>
+</html>
